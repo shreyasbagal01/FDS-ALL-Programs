@@ -106,6 +106,20 @@ while flag==1:
 
 #<----------------------------------------END OF PROGRAM------------------------------------------------->
 
+//Algorithm:-
+1)	Start
+2)	Declare the variables such as,n array,ele,ch,i=0
+3)	Input how many no. of students in first year
+4)	Input the Enter percentage marks of students
+5)	Print Menu:
+1)	Selection Sort
+2)	Bubble Sort and display Top 5 scores
+3)	Exit
+     ch= Input enter your choice
+6)	If ch==1 then call function SelectionSort(array,n) 
+7)	else if ch==2 then call function BubbleSort(array,n) 
+8)	else If ch==3 then go to step 9 else print wrong choice
+9)	Stop
 
 
 
