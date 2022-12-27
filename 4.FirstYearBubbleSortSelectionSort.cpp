@@ -33,7 +33,7 @@ public:
     {
      temp=m[j];
      m[j]=m[j+1];
-     m[j+1]=temp;
+     m[j+1]=temp;//for using Swapping purpose
     }
    }
   }
@@ -60,7 +60,7 @@ cout<<"TOP FIVE:"<<endl;
    }
     temp=m[i];
     m[i]=m[min];
-    m[min]=temp;
+    m[min]=temp; //for using Swapping purpose
 
   }
   cout<<"TOP FIVE:"<<endl;
@@ -79,6 +79,7 @@ int main()
  {
  cout<<"1.CREATE \n2.DISPLAY\n3.TOP FIVE BY BUBBLE SORT\n4.TOP FIVE BY INSERTION SORT\nENTER CHOICE:"<<endl;
   cin>>ch;
+  
   switch(ch)
   {
   case 1:
