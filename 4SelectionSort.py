@@ -93,5 +93,19 @@ while flag==1:
 9)	Stop
 
 
+Bubble Sort 
+
+Average case time complexity: O(n2)
+
+Worst-case time complexity: O(n2)
+
+Best case time complexity: O(n)
 
 
+Selection Sort 
+
+Average case time complexity: O(n2)
+
+Worst-case time complexity: O(n2)
+
+Best case time complexity: O(n2)
