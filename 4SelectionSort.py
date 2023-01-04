@@ -1,62 +1,34 @@
-'''
-
-
-Experiment Number 14: Write a python program to store first year percentage of students in an array.
-                      Write function for sorting array of floating point numbers in ascending order using:
-                      a) Selection Sort
-                      b) Bubble Sort and display top five scores
-'''
-
-
-# Function for Selection Sort of elements
-
 def Selection_Sort(marks):
     for i in range(len(marks)):
-
-        # Find the minimum element in remaining unsorted array
         min_idx = i
         for j in range(i + 1, len(marks)):
             if marks[min_idx] > marks[j]:
                 min_idx = j
-
-        # Swap the minimum element with the first element
         marks[i], marks[min_idx] = marks[min_idx], marks[i]
-
     print("Marks of students after performing Selection Sort on the list : ")
     for i in range(len(marks)):
         print(marks[i])
 
-#<--------------------------------------------------------------------------------------->
-
-# Function for Bubble Sort of elements
+    print("For Display top scores :")
+    print(marks[::-1])
 
 def Bubble_Sort(marks):
     n = len(marks)
-    # Traverse through all array elements
     for i in range(n - 1):
         # Last i elements are already in place
         for j in range(0, n - i - 1):
-
-            # Traverse the array from 0 to n-i-1
-            # Swap if the element found is greater than the next element
             if marks[j] > marks[j + 1]:
                 marks[j], marks[j + 1] = marks[j + 1], marks[j]
-
     print("Marks of students after performing Bubble Sort on the list :")
     for i in range(len(marks)):
         print(marks[i])
 
-#<--------------------------------------------------------------------------------------->
-
-# Function for displaying top five marks
+    print("For Display top scores :")
+    print(marks[::-1])
 
 def top_five_marks(marks):
     print("Top",len(marks),"Marks are : ")
-    print(*marks[::-1], sep="\n")
-
-#<---------------------------------------------------------------------------------------->
-
-# Main
+    print(*marks[-5:n], sep="\n")
 
 marks=[]
 n = int(input("Enter number of students whose marks are to be displayed : "))
@@ -102,7 +74,6 @@ while flag==1:
         print("\nEnter a valid choice!!")
         print("\nThanks for using this program!!")
         flag=0
-
 
 #<----------------------------------------END OF PROGRAM------------------------------------------------->
 
