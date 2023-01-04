@@ -109,3 +109,14 @@ Average case time complexity: O(n2)
 Worst-case time complexity: O(n2)
 
 Best case time complexity: O(n2)
+
+
+Quick Sort 
+
+Average case time complexity: O(n log n)
+
+Worst-case time complexity: O(n2)
+
+Best case time complexity: O(n log n )
+
+
